@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+}
+*::after, *::before {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Averta, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    height: 100vh;
+}
+
+section.hero-container {
+    background-image: url(https://zuri.team/img/hero-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+section .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 69px;
+    padding-top: 69px;
+}
+
+div.hero {
+    max-width:700px ;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding: 10px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 36px;
+    color:#514949 ;
+}
+
+.hero p {
+   line-height: 24px;
+   color: #514949;
+   opacity: 0.9;
+
+}
+
+a {
+    text-decoration: none;
+    color: #E7332B;
+}
+
+
+.btn-hero {
+    margin-top: 92px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.my-btn{
+    padding: 11px 28px;
+    border: 1px solid #E7332B;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: #E7332B;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.btn-red-outliner {
+    background-color: #fff;
+    color: #E7332B;
+}
+
+.btn-red:hover {
+    background-color: #fff;
+    color: #E7332B;
+    transition: 0.3;
+  
+}
+
+.btn-red-outliner:hover {
+    background-color: #E7332B;
+    color: #fff;
+    transition: 0.3;
+}
