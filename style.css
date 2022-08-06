@@ -6,6 +6,7 @@
 
 html {
     box-sizing: border-box;
+  ;
 }
 *::after, *::before {
     box-sizing: inherit;
@@ -19,7 +20,8 @@ body{
     padding: 0;
     background-color: #fff;
     height: 100vh;
-    overflow-x: hidden; /* This remove the overflow on the vertical or x axis */
+    overscroll-behavior: none /* This remove the Overscroll behavior of the page */
+     
    
 }
 
@@ -212,7 +214,7 @@ section.program-section {
 }
 
 
-.footer-container .link h3 {
+ .link h3 {
     font-size: 24px;
     color: #514949;
     margin: 16px;
@@ -250,7 +252,7 @@ section.program-section {
     font-size: 24px;
     color: #514949;
     margin-top: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .social-link img {
@@ -266,6 +268,11 @@ section.program-section {
     opacity: 0.5;
 }
 
+  hr  {
+    border-width: 1px;
+    color: #514949;
+
+  }
 .copyright {
    font-weight: bold;
    margin-top: 32px;
@@ -278,8 +285,11 @@ section.program-section {
 
 /* Tablet Mode  */
 
-@media  only screen and (min-width: 768px){
+@media  only screen and (min-width: 769px){
 
+    section.hero-container {
+        height: 800px;
+    }
 
     .btn-hero {
     
@@ -291,22 +301,59 @@ section.program-section {
     width: 700px;
    }
 
+/* Footer style */
+.footer-container {
+    margin-top: 215px !important;
+    margin: 0 auto;
+    max-width: 1240px !important;
+}
+
+.footer-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+.footer-logo {
+    padding-top: 6px;
+    
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.link h3, .contact h3, .social-link h3 {
+    margin: 0 !important;
+    padding-bottom: 8px;
+    font-size: 18px !important ;
+    
+}
+
+.link, .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left !important;   
+}
+
+.link a, .contact a, .contact p {
+    font-size: 14px;
 }
 
 
+.social-link {
+    text-align: left !important;
+}
+
+}
+
 
 /* Laptop and Desktop */
-@media  only screen and (min-width: 992px) {
-    section.hero-container {
-        height: 800px;
-    }
+@media  only screen and (min-width:1025px) {
+    
 
     .program-container {
-
         max-width: 1240px !important;
-        margin: 0 auto;
-      
-        
+        margin: 0 auto;  
     }
 
 .flex {
@@ -338,11 +385,7 @@ img.card-bg-svg-2 {
 }
 
 
-
-
 }
-
-
 
 
 @media (min-width: 1200px) {
@@ -379,46 +422,4 @@ img.card-bg-svg-2 {
 
 
 
-
-
-/* 
-{
-
-
-    
-
-.center-image .logo-img {
-    padding-top: 0px;
-}
-
-.row {
-    display: flex;
-   
- 
-}
-
-.col {
-   padding: 0 15px;
-   width: 33.3333%;
-}
-
-section.program {
-    background-color: #fff;
-    overflow: hidden;
-  
-  }
-
-  .my-container {
-    margin: 0 auto;
-    max-width: 1240px !important;
-}
-
-.program-card-zed {
-    position: relative;
-    z-index: 1;
-}
-
-
-
-}
 
